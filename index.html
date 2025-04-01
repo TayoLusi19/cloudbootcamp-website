@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudBootCamp.AI - Break Into Cloud Engineering</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="gradient-bg"></div>
+    <div class="grid-background"></div>
+    
+    <!-- Floating Shapes -->
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+                <span>CloudBootCamp.AI</span>
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">HOME</a></li>
+                    <li><a href="#how-it-works" class="nav-link">HOW IT WORKS</a></li>
+                    <li><a href="#testimonials" class="nav-link">TESTIMONIALS</a></li>
+                    <li><a href="#results" class="nav-link">RESULTS</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#start-now" class="btn btn-primary">START NOW</a>
+            </div>
+
+            <button class="mobile-menu" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-flex">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Break Into <span class="gradient-text">Cloud Engineering</span> — Without Another Certification
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        We help overworked software engineers land <span class="gradient-text">$140K+ jobs in 90 days</span> or less — without needing another cert or a degree.
+                    </p>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-value">400+</span>
+                            <span class="stat-label">STUDENTS ENROLLED</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="stat-label">OVER 2,300 REVIEWS</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-action">
+                        <a href="#start-now" class="btn btn-primary btn-large">START NOW</a>
+                    </div>
+
+                    <div class="featured-in">
+                        <p>FEATURED IN</p>
+                        <div class="featured-logos">
+                            <div class="featured-logo">FORBES</div>
+                            <div class="featured-logo">ENTREPRENEUR</div>
+                            <div class="featured-logo">BUSINESS INSIDER</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-video">
+                    <div class="video-wrapper">
+                        <img src="https://img.youtube.com/vi/zIdx-i7bedc/maxresdefault.jpg" alt="Watch our free training" class="video-thumbnail">
+                        <div class="video-play-overlay"></div>
+                        <button class="play-button" data-video-id="zIdx-i7bedc">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="video-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close video">×</button>
+            <div class="video-container">
+                <iframe src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Your path to a high-paying cloud engineering career</p>
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>No Certs or Degrees Needed</h3>
+                        <p>Learn only what companies actually use, focusing on practical skills that get you hired, not theoretical knowledge.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Hands-On AWS Projects</h3>
+                        <p>Build real-world systems for your resume that demonstrate your skills and give you confidence in technical interviews.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Mentorship + Accountability</h3>
+                        <p>Never feel stuck or lost again with our proven system that includes 1-on-1 guidance and community support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="results">
+        <div class="container">
+            <h2 class="section-title">CloudBootCamp.AI by the Numbers</h2>
+            <p class="section-subtitle">Real results from real engineers just like you</p>
+            
+            <div class="results-grid">
+                <div class="result-item">
+                    <div class="result-content">
+                        <div class="result-earnings">
+                            <span class="before">400+</span>
+                            <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                            <span class="after">Students Enrolled</span>
+                        </div>
+                        <div class="result-info">
+                            <h3>Land $130K+ Roles</h3>
+                            <p>Get recruiters reaching out to you</p>
+                        </div>
+                    </div>
+                    <img src="https://via.placeholder.com/300x400/333/ffffff?text=Cloud+Engineers" alt="Cloud Engineers">
+                </div>
+                
+                <div class="result-item">
+                    <div class="result-content">
+                        <div class="result-earnings">
+                            <span class="before">$90K</span>
+                            <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                            <span class="after">$140K Avg Starting Salary</span>
+                        </div>
+                        <div class="result-info">
+                            <h3>Salary Boost</h3>
+                            <p>Significant income increase</p>
+                        </div>
+                    </div>
+                    <img src="https://via.placeholder.com/300x400/333/ffffff?text=Salary+Growth" alt="Salary Growth">
+                </div>
+                
+                <div class="result-item">
+                    <div class="result-content">
+                        <div class="result-earnings">
+                            <span class="before">0</span>
+                            <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                            <span class="after">100s of Job Offers Secured</span>
+                        </div>
+                        <div class="result-info">
+                            <h3>Career Acceleration</h3>
+                            <p>Fast-track your success</p>
+                        </div>
+                    </div>
+                    <img src="https://via.placeholder.com/300x400/333/ffffff?text=Job+Offers" alt="Job Offers">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Students Say</h2>
+            <p class="section-subtitle">Hear from engineers who've transformed their careers with CloudBootCamp.AI</p>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-slide">
+                    <div class="video-testimonial">
+                        <div class="video-wrapper">
+                            <img src="https://img.youtube.com/vi/zIdx-i7bedc/maxresdefault.jpg" alt="Testimonial 1" class="video-thumbnail">
+                            <div class="video-play-overlay"></div>
+                            <button class="play-button" data-video-id="zIdx-i7bedc">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Sarah</h3>
+                            <p class="testimonial-role">CALIFORNIA</p>
+                            <div class="testimonial-revenue">
+                                <span class="before">$90K</span>
+                                <span class="arrow"><i class="fas fa-arrow-right"></i></span>
+                                <span class="after">$145K</span>
+                            </div>
+                            <p class="testimonial-quote">"I was stuck at $90K — now I make $145K fully remote. CloudBootCamp.AI gave me the real-world skills I needed to excel in interviews and negotiate a much better salary."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="more-testimonials">
+                <div class="text-testimonial">
+                    <div class="testimonial-content">
+                        <p>"I was stuck at $90K — now I make $145K fully remote."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60x60/666/ffffff?text=S" alt="Sarah" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Sarah</h4>
+                            <p>California</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-testimonial">
+                    <div class="testimonial-content">
+                        <p>"This flipped my entire career. I landed 2 job offers in 6 weeks."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60x60/666/ffffff?text=M" alt="Mo" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Mo</h4>
+                            <p>Texas</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-testimonial">
+                    <div class="testimonial-content">
+                        <p>"The hands-on projects and mentorship were exactly what I needed to transition into cloud engineering."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60x60/666/ffffff?text=A" alt="Alex" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Alex</h4>
+                            <p>Remote Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="start-now" class="cta">
+        <div class="container">
+            <h2 class="cta-title">Ready to Launch Your Cloud Career?</h2>
+            <p class="cta-subtitle">Join our program and discover how to land a high-paying cloud engineering role in 90 days or less</p>
+            <div class="cta-actions">
+                <a href="#" class="btn btn-primary btn-large">START NOW</a>
+            </div>
+            <p class="cta-note">Limited spots available - Access closes soon</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="/" class="logo">
+                        <span>CloudBootCamp.AI</span>
+                    </a>
+                    <p>Break into cloud engineering without another certification.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Podcasts</a></li>
+                            <li><a href="#">Free Training</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">GDPR</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p>&copy; CloudBootCamp.AI 2025. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
