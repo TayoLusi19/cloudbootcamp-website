@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudBootCamp.AI - Investor Relations</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="gradient-bg"></div>
+    <div class="grid-background"></div>
+    
+    <!-- Floating Shapes -->
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+                <span>CloudBootCamp.AI</span>
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link">HOME</a></li>
+                    <li><a href="#overview" class="nav-link">OVERVIEW</a></li>
+                    <li><a href="#market" class="nav-link">MARKET</a></li>
+                    <li><a href="#financials" class="nav-link">FINANCIALS</a></li>
+                    <li><a href="#team" class="nav-link">TEAM</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Investor <span class="gradient-text">Relations</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Transforming the future of cloud engineering education through innovative, outcome-driven learning
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Overview -->
+    <section id="overview" class="section">
+        <div class="container">
+            <h2 class="section-title">Company Overview</h2>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <h3>Our Mission</h3>
+                    <p>To democratize access to high-paying cloud engineering careers by providing practical, mentorship-driven education that delivers real results.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Our Vision</h3>
+                    <p>To become the leading platform for cloud engineering education, helping thousands of professionals transform their careers and lives.</p>
+                </div>
+                <div class="overview-card">
+                    <h3>Key Differentiators</h3>
+                    <ul>
+                        <li>Outcome-focused curriculum</li>
+                        <li>1-on-1 mentorship model</li>
+                        <li>Proven job placement success</li>
+                        <li>Scalable online platform</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Opportunity -->
+    <section id="market" class="section">
+        <div class="container">
+            <h2 class="section-title">Market Opportunity</h2>
+            <div class="market-grid">
+                <div class="market-card">
+                    <h3>Market Size</h3>
+                    <p class="market-value">$1.2T</p>
+                    <p class="market-label">Global Cloud Computing Market (2025)</p>
+                </div>
+                <div class="market-card">
+                    <h3>Job Growth</h3>
+                    <p class="market-value">+15%</p>
+                    <p class="market-label">Annual Growth in Cloud Engineering Jobs</p>
+                </div>
+                <div class="market-card">
+                    <h3>Salary Range</h3>
+                    <p class="market-value">$120K-$180K</p>
+                    <p class="market-label">Average Cloud Engineer Salary</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Model -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Business Model</h2>
+            <div class="business-model-grid">
+                <div class="model-card">
+                    <h3>Revenue Streams</h3>
+                    <ul>
+                        <li>Tuition Fees ($8,000/student)</li>
+                        <li>Corporate Partnerships</li>
+                        <li>Premium Mentorship Programs</li>
+                        <li>Enterprise Training Solutions</li>
+                    </ul>
+                </div>
+                <div class="model-card">
+                    <h3>Cost Structure</h3>
+                    <ul>
+                        <li>Platform Development</li>
+                        <li>Mentor Compensation</li>
+                        <li>Marketing & Sales</li>
+                        <li>Operations & Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Performance -->
+    <section id="financials" class="section">
+        <div class="container">
+            <h2 class="section-title">Financial Performance</h2>
+            <div class="financials-grid">
+                <div class="financial-card">
+                    <h3>Revenue Growth</h3>
+                    <div class="financial-chart">
+                        <!-- Chart would be implemented with Chart.js or similar -->
+                        <div class="chart-placeholder">Revenue Growth Chart</div>
+                    </div>
+                </div>
+                <div class="financial-card">
+                    <h3>Key Metrics</h3>
+                    <ul class="metrics-list">
+                        <li>
+                            <span class="metric-label">Monthly Revenue</span>
+                            <span class="metric-value">$15K-$20K</span>
+                        </li>
+                        <li>
+                            <span class="metric-label">Profit Margin</span>
+                            <span class="metric-value">65-70%</span>
+                        </li>
+                        <li>
+                            <span class="metric-label">Student Success Rate</span>
+                            <span class="metric-value">78%</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://via.placeholder.com/150" alt="Adetayo Ibijemilusi">
+                    </div>
+                    <h3>Adetayo Ibijemilusi</h3>
+                    <p class="team-role">Founder & CEO</p>
+                    <p class="team-bio">Former cloud engineer turned educator, helping others achieve similar career transformations.</p>
+                </div>
+                <!-- Additional team members would be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Opportunity -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Investment Opportunity</h2>
+            <div class="investment-grid">
+                <div class="investment-card">
+                    <h3>Funding Needs</h3>
+                    <ul>
+                        <li>Platform Development</li>
+                        <li>Marketing & Growth</li>
+                        <li>Team Expansion</li>
+                        <li>Curriculum Development</li>
+                    </ul>
+                </div>
+                <div class="investment-card">
+                    <h3>Use of Funds</h3>
+                    <ul>
+                        <li>Technology Infrastructure</li>
+                        <li>Marketing & Customer Acquisition</li>
+                        <li>Team Building</li>
+                        <li>Curriculum Enhancement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-card">
+                <h2>Interested in Investing?</h2>
+                <p>We're looking for partners who share our vision of transforming education and creating life-changing opportunities.</p>
+                <a href="mailto:michaeltayo96@outlook.com" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="/" class="logo">
+                        <span>CloudBootCamp.AI</span>
+                    </a>
+                    <p>Transforming careers through cloud engineering education.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h4>Investor Resources</h4>
+                        <ul>
+                            <li><a href="#overview">Company Overview</a></li>
+                            <li><a href="#market">Market Analysis</a></li>
+                            <li><a href="#financials">Financials</a></li>
+                            <li><a href="#team">Team</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Investor Relations</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; CloudBootCamp.AI 2025. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
