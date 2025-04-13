@@ -1437,3 +1437,131 @@ button {
         padding: 2rem;
     }
 }
+
+/* Investor Page Specific Styles */
+.hero-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 16px;
+    border-radius: var(--radius-full);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--primary);
+    border: 1px solid rgba(225, 70, 150, 0.3);
+}
+
+.highlight {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-badge {
+    display: inline-block;
+    background: rgba(225, 70, 150, 0.1);
+    color: var(--primary);
+    padding: 8px 16px;
+    border-radius: var(--radius-full);
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    color: var(--gray-light);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 1rem auto 0;
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(225, 70, 150, 0.1);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.card-icon i {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.card-metrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-metrics li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-metrics .metric {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.card-metrics .label {
+    font-size: 0.8rem;
+    color: var(--gray-light);
+    line-height: 1.2;
+}
+
+.feature-list {
+    margin-top: 1.5rem;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 0;
+}
+
+.feature-list li:before {
+    content: none;
+}
+
+.feature-list i {
+    color: var(--primary);
+    font-size: 0.8rem;
+}
+
+.feature-list span {
+    color: var(--gray-light);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .hero-cta {
+        flex-direction: column;
+    }
+    
+    .card-metrics {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
