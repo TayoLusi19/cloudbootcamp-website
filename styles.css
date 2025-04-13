@@ -320,7 +320,7 @@ button {
 
 /* Hero Section */
 .hero {
-    padding: 180px 0 100px;
+    padding: 140px 0 80px;
     position: relative;
     overflow: hidden;
 }
@@ -334,7 +334,8 @@ button {
 
 .hero-content {
     flex: 1;
-    max-width: 600px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .hero-video {
@@ -345,16 +346,18 @@ button {
 .hero-title {
     font-size: 3.5rem;
     font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 25px;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 40px;
+    margin-bottom: 2rem;
     font-weight: 500;
     font-family: var(--font-secondary);
+    line-height: 1.5;
 }
 
 .hero-stats {
@@ -1195,26 +1198,27 @@ button {
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     font-weight: 800;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
     color: var(--text-primary);
+    letter-spacing: -0.02em;
 }
 
 /* Overview Grid */
 .overview-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 1.5rem;
     margin-top: 2rem;
 }
 
 .overview-card {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
-    border-radius: 16px;
-    padding: 2rem;
+    border-radius: 14px;
+    padding: 1.75rem;
     transition: transform 0.3s ease;
 }
 
@@ -1225,7 +1229,8 @@ button {
 .overview-card h3 {
     color: var(--gradient-primary);
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
+    letter-spacing: -0.01em;
 }
 
 /* Market Grid */
@@ -1444,11 +1449,12 @@ button {
     background: rgba(255, 255, 255, 0.1);
     padding: 8px 16px;
     border-radius: var(--radius-full);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 600;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     color: var(--primary);
     border: 1px solid rgba(225, 70, 150, 0.3);
+    letter-spacing: 0.5px;
 }
 
 .highlight {
@@ -1458,13 +1464,13 @@ button {
 
 .hero-cta {
     display: flex;
-    gap: 1rem;
-    margin-top: 2.5rem;
+    gap: 1.25rem;
+    margin-top: 2rem;
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .section-badge {
@@ -1473,16 +1479,18 @@ button {
     color: var(--primary);
     padding: 8px 16px;
     border-radius: var(--radius-full);
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.5px;
 }
 
 .section-subtitle {
     color: var(--gray-light);
     font-size: 1.1rem;
-    max-width: 600px;
-    margin: 1rem auto 0;
+    max-width: 700px;
+    margin: 0.75rem auto 0;
+    line-height: 1.5;
 }
 
 .card-icon {
@@ -1688,7 +1696,7 @@ button {
 /* Overview Section Styles */
 .overview-section {
     position: relative;
-    padding: 120px 0;
+    padding: 80px 0;
     overflow: hidden;
 }
 
@@ -1713,9 +1721,9 @@ button {
 .overview-stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    margin-bottom: 80px;
-    padding: 2rem;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    padding: 1.75rem;
     background: rgba(255, 255, 255, 0.03);
     border-radius: var(--radius-lg);
     backdrop-filter: blur(10px);
@@ -1724,7 +1732,7 @@ button {
 
 .stat-item {
     text-align: center;
-    padding: 1.5rem;
+    padding: 1.25rem;
     border-radius: var(--radius-md);
     transition: transform var(--transition-medium);
 }
@@ -1734,9 +1742,9 @@ button {
 }
 
 .stat-icon {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 1rem;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 0.75rem;
     background: rgba(225, 70, 150, 0.1);
     border-radius: 16px;
     display: flex;
@@ -1750,26 +1758,27 @@ button {
 }
 
 .stat-value {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-weight: 800;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem;
 }
 
 .stat-label {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--gray-light);
     font-weight: 500;
+    letter-spacing: 0.3px;
 }
 
 /* Overview Cards */
 .overview-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .overview-card {
@@ -1788,76 +1797,77 @@ button {
 }
 
 .card-header {
-    padding: 2rem;
+    padding: 1.75rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.25rem;
 }
 
 .card-header .card-icon {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     margin: 0;
 }
 
 .card-header h3 {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     font-weight: 700;
     margin: 0;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    letter-spacing: -0.01em;
 }
 
 .card-content {
-    padding: 2rem;
+    padding: 1.75rem;
 }
 
 .card-content p {
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.6;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Card Features */
 .card-features {
     display: grid;
-    gap: 1rem;
+    gap: 0.875rem;
 }
 
 .feature {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.875rem;
 }
 
 .feature i {
     color: var(--primary);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .feature span {
     color: var(--gray-light);
-    font-size: 0.9rem;
+    font-size: 0.875rem;
 }
 
 /* Differentiator List */
 .differentiator-list {
     display: grid;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .differentiator-item {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.25rem;
     align-items: flex-start;
 }
 
 .differentiator-icon {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     background: rgba(225, 70, 150, 0.1);
     border-radius: 12px;
     display: flex;
@@ -1872,14 +1882,14 @@ button {
 }
 
 .differentiator-info h4 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem;
     color: white;
 }
 
 .differentiator-info p {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     color: var(--gray-light);
     line-height: 1.5;
     margin: 0;
@@ -1888,8 +1898,8 @@ button {
 /* Section Divider */
 .section-divider {
     position: relative;
-    height: 60px;
-    margin-top: 80px;
+    height: 50px;
+    margin-top: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
