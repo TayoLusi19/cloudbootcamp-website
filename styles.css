@@ -41,6 +41,18 @@
     --blur-sm: 5px;
     --blur-md: 10px;
     --blur-lg: 20px;
+
+    /* Typography Scale */
+    --text-xs: 0.75rem;    /* 12px */
+    --text-sm: 0.875rem;   /* 14px */
+    --text-base: 1rem;     /* 16px */
+    --text-lg: 1.125rem;   /* 18px */
+    --text-xl: 1.25rem;    /* 20px */
+    --text-2xl: 1.5rem;    /* 24px */
+    --text-3xl: 1.875rem;  /* 30px */
+    --text-4xl: 2.25rem;   /* 36px */
+    --text-5xl: 3rem;      /* 48px */
+    --text-6xl: 3.75rem;   /* 60px */
 }
 
 /* Reset & Base Styles */
@@ -374,20 +386,19 @@ button {
 }
 
 .hero-title {
-    font-size: 4.5rem;
-    line-height: 1.1;
+    font-size: var(--text-6xl);
     font-weight: 800;
+    line-height: 1.1;
     margin-bottom: 1.5rem;
     letter-spacing: -0.02em;
-    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .hero-subtitle {
-    font-size: 1.4rem;
-    line-height: 1.5;
-    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--text-xl);
+    color: var(--gray-light);
     margin-bottom: 2rem;
-    font-weight: 500;
+    line-height: 1.6;
+    max-width: 600px;
 }
 
 .hero-stats {
@@ -592,7 +603,7 @@ button {
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: var(--text-5xl);
     font-weight: 800;
     text-align: center;
     margin-bottom: 15px;
@@ -603,7 +614,7 @@ button {
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 70px;
     font-family: var(--font-secondary);
-    font-size: 1.1rem;
+    font-size: var(--text-xl);
 }
 
 .steps-container {
@@ -904,7 +915,7 @@ button {
     max-width: 700px;
     margin: 0 auto 40px;
     font-family: var(--font-secondary);
-    font-size: 1.1rem;
+    font-size: var(--text-xl);
 }
 
 .cta-actions {
@@ -1029,7 +1040,7 @@ button {
 /* Media Queries */
 @media (max-width: 1200px) {
     .hero-title {
-        font-size: 3rem;
+        font-size: var(--text-4xl);
     }
     
     .hero-flex {
@@ -1062,11 +1073,11 @@ button {
     }
     
     .hero-title {
-        font-size: 3.5rem;
+        font-size: var(--text-5xl);
     }
     
     .hero-subtitle {
-        font-size: 1.2rem;
+        font-size: var(--text-xl);
     }
     
     .hero-text {
@@ -1074,11 +1085,11 @@ button {
     }
     
     .section-title {
-        font-size: 2.8rem;
+        font-size: var(--text-4xl);
     }
     
     .section-subtitle {
-        font-size: 1.1rem;
+        font-size: var(--text-xl);
     }
     
     .overview-grid,
@@ -1106,7 +1117,7 @@ button {
     }
     
     .card-metrics .metric {
-        font-size: 2.25rem;
+        font-size: var(--text-2xl);
     }
     
     .footer-content {
@@ -1169,11 +1180,11 @@ button {
     }
     
     .hero-title {
-        font-size: 3rem;
+        font-size: var(--text-4xl);
     }
     
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: var(--text-xl);
     }
     
     .partner-badge {
@@ -1182,7 +1193,7 @@ button {
     }
     
     .section-title {
-        font-size: 2.5rem;
+        font-size: var(--text-4xl);
     }
     
     .overview-grid,
@@ -1238,15 +1249,15 @@ button {
     }
     
     .hero-title {
-        font-size: 2.5rem;
+        font-size: var(--text-3xl);
     }
     
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: var(--text-xl);
     }
     
     .section-title {
-        font-size: 2.2rem;
+        font-size: var(--text-3xl);
     }
     
     .hero-cta {
@@ -1339,24 +1350,23 @@ button {
 }
 
 .overview-card h3 {
-    font-size: 2rem;
+    font-size: var(--text-2xl);
     font-weight: 700;
     margin-top: 1rem;
 }
 
 .overview-card p {
-    font-size: 1.2rem;
+    font-size: var(--text-lg);
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.85);
-    margin-bottom: 2rem;
+    color: var(--gray-light);
+    margin-bottom: 1.5rem;
 }
 
 .card-metrics {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    list-style: none;
-    padding: 0;
+    margin-top: 2rem;
 }
 
 .card-metrics li {
@@ -1364,7 +1374,7 @@ button {
 }
 
 .card-metrics .metric {
-    font-size: 2.75rem;
+    font-size: var(--text-3xl);
     font-weight: 800;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
@@ -1374,9 +1384,10 @@ button {
 }
 
 .card-metrics .label {
-    font-size: 1rem;
+    font-size: var(--text-sm);
     color: var(--gray-light);
-    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .differentiator-list {
@@ -1408,12 +1419,12 @@ button {
 }
 
 .differentiator-info h4 {
-    font-size: 1.25rem;
+    font-size: var(--text-xl);
     margin-bottom: 0.5rem;
 }
 
 .differentiator-info p {
-    font-size: 1rem;
+    font-size: var(--text-base);
     margin-bottom: 0;
 }
 
@@ -1425,19 +1436,18 @@ button {
 }
 
 .section-title {
-    font-size: 3.2rem;
+    font-size: var(--text-5xl);
     line-height: 1.2;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
     letter-spacing: -0.02em;
 }
 
 .section-subtitle {
-    font-size: 1.3rem;
-    line-height: 1.5;
-    color: rgba(255, 255, 255, 0.8);
+    font-size: var(--text-xl);
+    color: var(--gray-light);
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
 }
 
 /* Grid Layouts */
@@ -1545,7 +1555,7 @@ button {
     }
 
     .hero-title {
-        font-size: 3rem;
+        font-size: var(--text-4xl);
     }
 
     .section {
@@ -1553,7 +1563,7 @@ button {
     }
 
     .section-title {
-        font-size: 2.25rem;
+        font-size: var(--text-4xl);
     }
 }
 
@@ -1563,22 +1573,22 @@ button {
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: var(--text-3xl);
     }
 }
 
 /* Investor Page Specific Styles */
 .hero-badge {
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 8px 16px;
-    border-radius: var(--radius-full);
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
+    font-size: var(--text-sm);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     color: var(--primary);
-    border: 1px solid rgba(225, 70, 150, 0.3);
-    letter-spacing: 0.5px;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(225, 70, 150, 0.1);
+    border-radius: var(--radius-full);
 }
 
 .highlight {
@@ -1618,20 +1628,18 @@ button {
 }
 
 .section-badge {
-    display: inline-block;
-    background: rgba(225, 70, 150, 0.1);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     color: var(--primary);
-    padding: 8px 16px;
-    border-radius: var(--radius-full);
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+    display: inline-block;
 }
 
 .section-subtitle {
     color: var(--gray-light);
-    font-size: 1.1rem;
+    font-size: var(--text-xl);
     max-width: 700px;
     margin: 0.75rem auto 0;
     line-height: 1.5;
