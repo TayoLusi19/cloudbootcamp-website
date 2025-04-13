@@ -187,6 +187,14 @@
 
     <!-- Market Opportunity -->
     <section id="market" class="section">
+        <div class="section-visual">
+            <div class="orbit">
+                <div class="planet"></div>
+                <div class="satellite satellite-1"></div>
+                <div class="satellite satellite-2"></div>
+                <div class="satellite satellite-3"></div>
+            </div>
+        </div>
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">The Opportunity</span>
@@ -206,6 +214,9 @@
                         <i class="fas fa-arrow-trend-up"></i>
                         <span>Growing at 17.9% CAGR</span>
                     </div>
+                    <div class="value-bar">
+                        <div class="value-fill" style="width: 80%;"></div>
+                    </div>
                 </div>
                 
                 <div class="market-card">
@@ -219,6 +230,9 @@
                         <i class="fas fa-arrow-trend-up"></i>
                         <span>3x Faster Than Average</span>
                     </div>
+                    <div class="value-bar">
+                        <div class="value-fill" style="width: 75%;"></div>
+                    </div>
                 </div>
                 
                 <div class="market-card">
@@ -231,6 +245,9 @@
                     <div class="market-trend">
                         <i class="fas fa-arrow-trend-up"></i>
                         <span>Top 10% earn $200K+</span>
+                    </div>
+                    <div class="value-bar">
+                        <div class="value-fill" style="width: 85%;"></div>
                     </div>
                 </div>
             </div>
@@ -302,6 +319,11 @@
 
     <!-- Financial Performance -->
     <section id="financials" class="section">
+        <div class="section-visual finance-visual">
+            <div class="wave wave-1"></div>
+            <div class="wave wave-2"></div>
+            <div class="wave wave-3"></div>
+        </div>
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">Our Performance</span>
@@ -359,6 +381,19 @@
 
     <!-- Team -->
     <section id="team" class="section">
+        <div class="section-visual team-visual">
+            <div class="floating-badges">
+                <div class="tech-badge">
+                    <i class="fab fa-aws"></i>
+                </div>
+                <div class="tech-badge">
+                    <i class="fab fa-microsoft"></i>
+                </div>
+                <div class="tech-badge">
+                    <i class="fab fa-google"></i>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">Leadership</span>
@@ -373,6 +408,10 @@
                     </div>
                     <h3>Adetayo Ibijemilusi</h3>
                     <p class="team-role">Founder & CEO</p>
+                    <div class="expertise-badges">
+                        <span class="expertise-badge">AWS Certified</span>
+                        <span class="expertise-badge">Cloud Architecture</span>
+                    </div>
                     <p class="team-bio">Former AWS cloud engineer with 5+ years in enterprise solutions. Passionate about closing the skills gap in cloud technology through practical education.</p>
                     <div class="team-social">
                         <a href="https://linkedin.com" target="_blank" class="social-link">
@@ -622,49 +661,104 @@
     </footer>
 
     <script>
-        // Revenue Growth Chart
-        const ctx = document.getElementById('revenueChart').getContext('2d');
-        new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-                datasets: [{
-                    label: 'Monthly Revenue',
-                    data: [15000, 16500, 18000, 19500, 21000, 23000],
-                    borderColor: '#e14696',
-                    backgroundColor: 'rgba(225, 70, 150, 0.1)',
-                    fill: true,
-                    tension: 0.4
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        display: false
-                    }
+        // Initialize chart after page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Revenue Growth Chart
+            const ctx = document.getElementById('revenueChart').getContext('2d');
+            
+            // Create gradient
+            const gradientFill = ctx.createLinearGradient(0, 0, 0, 300);
+            gradientFill.addColorStop(0, 'rgba(225, 70, 150, 0.6)');
+            gradientFill.addColorStop(1, 'rgba(225, 70, 150, 0.01)');
+            
+            // Chart data
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+                    datasets: [{
+                        label: 'Monthly Revenue ($)',
+                        data: [15000, 16500, 18000, 19500, 21000, 23000, 26000, 29000, 33000],
+                        borderColor: '#e14696',
+                        backgroundColor: gradientFill,
+                        borderWidth: 3,
+                        fill: true,
+                        tension: 0.4,
+                        pointBackgroundColor: '#e14696',
+                        pointBorderColor: 'rgba(255, 255, 255, 0.8)',
+                        pointBorderWidth: 2,
+                        pointRadius: 5,
+                        pointHoverRadius: 8
+                    }]
                 },
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        grid: {
-                            color: 'rgba(255, 255, 255, 0.1)'
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: {
+                        duration: 2000,
+                        easing: 'easeOutQuart'
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            labels: {
+                                color: 'rgba(255, 255, 255, 0.7)',
+                                font: {
+                                    family: "'Montserrat', sans-serif",
+                                    weight: '600'
+                                }
+                            }
                         },
-                        ticks: {
-                            color: 'rgba(255, 255, 255, 0.7)'
+                        tooltip: {
+                            backgroundColor: 'rgba(10, 12, 28, 0.8)',
+                            titleFont: {
+                                family: "'Montserrat', sans-serif",
+                                size: 14,
+                                weight: '600'
+                            },
+                            bodyFont: {
+                                family: "'Open Sans', sans-serif",
+                                size: 13
+                            },
+                            padding: 12,
+                            cornerRadius: 8,
+                            displayColors: false
                         }
                     },
-                    x: {
-                        grid: {
-                            color: 'rgba(255, 255, 255, 0.1)'
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.05)',
+                                drawBorder: false
+                            },
+                            ticks: {
+                                color: 'rgba(255, 255, 255, 0.6)',
+                                font: {
+                                    family: "'Montserrat', sans-serif",
+                                    weight: '500'
+                                },
+                                callback: function(value) {
+                                    return '$' + value.toLocaleString();
+                                }
+                            }
                         },
-                        ticks: {
-                            color: 'rgba(255, 255, 255, 0.7)'
+                        x: {
+                            grid: {
+                                display: false,
+                                drawBorder: false
+                            },
+                            ticks: {
+                                color: 'rgba(255, 255, 255, 0.6)',
+                                font: {
+                                    family: "'Montserrat', sans-serif",
+                                    weight: '500'
+                                }
+                            }
                         }
                     }
                 }
-            }
+            });
         });
     </script>
 </body>
