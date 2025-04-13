@@ -13,6 +13,7 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
@@ -153,48 +154,112 @@
     <!-- Market Opportunity -->
     <section id="market" class="section">
         <div class="container">
-            <h2 class="section-title">Market Opportunity</h2>
+            <div class="section-header">
+                <span class="section-badge">The Opportunity</span>
+                <h2 class="section-title">Market Opportunity</h2>
+                <p class="section-subtitle">Capitalizing on the explosive growth of cloud computing and the increasing demand for skilled engineers</p>
+            </div>
+            
             <div class="market-grid">
                 <div class="market-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
                     <h3>Market Size</h3>
                     <p class="market-value">$1.2T</p>
                     <p class="market-label">Global Cloud Computing Market (2025)</p>
+                    <div class="market-trend">
+                        <i class="fas fa-arrow-trend-up"></i>
+                        <span>Growing at 17.9% CAGR</span>
+                    </div>
                 </div>
+                
                 <div class="market-card">
+                    <div class="card-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
                     <h3>Job Growth</h3>
                     <p class="market-value">+15%</p>
                     <p class="market-label">Annual Growth in Cloud Engineering Jobs</p>
+                    <div class="market-trend">
+                        <i class="fas fa-arrow-trend-up"></i>
+                        <span>3x Faster Than Average</span>
+                    </div>
                 </div>
+                
                 <div class="market-card">
+                    <div class="card-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
                     <h3>Salary Range</h3>
                     <p class="market-value">$120K-$180K</p>
                     <p class="market-label">Average Cloud Engineer Salary</p>
+                    <div class="market-trend">
+                        <i class="fas fa-arrow-trend-up"></i>
+                        <span>Top 10% earn $200K+</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Business Model -->
-    <section class="section">
+    <section id="business" class="section">
         <div class="container">
-            <h2 class="section-title">Business Model</h2>
+            <div class="section-header">
+                <span class="section-badge">Our Business</span>
+                <h2 class="section-title">Business Model</h2>
+                <p class="section-subtitle">A scalable, high-margin education platform with multiple revenue streams</p>
+            </div>
+            
             <div class="business-model-grid">
                 <div class="model-card">
+                    <div class="card-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
                     <h3>Revenue Streams</h3>
-                    <ul>
-                        <li>Tuition Fees ($8,000/student)</li>
-                        <li>Corporate Partnerships</li>
-                        <li>Premium Mentorship Programs</li>
-                        <li>Enterprise Training Solutions</li>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Tuition Fees ($8,000/student)</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Corporate Partnerships</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Premium Mentorship Programs</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Enterprise Training Solutions</span>
+                        </li>
                     </ul>
                 </div>
+                
                 <div class="model-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
                     <h3>Cost Structure</h3>
-                    <ul>
-                        <li>Platform Development</li>
-                        <li>Mentor Compensation</li>
-                        <li>Marketing & Sales</li>
-                        <li>Operations & Support</li>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Platform Development</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Mentor Compensation</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Marketing & Sales</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Operations & Support</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -204,16 +269,27 @@
     <!-- Financial Performance -->
     <section id="financials" class="section">
         <div class="container">
-            <h2 class="section-title">Financial Performance</h2>
+            <div class="section-header">
+                <span class="section-badge">Our Performance</span>
+                <h2 class="section-title">Financial Performance</h2>
+                <p class="section-subtitle">Strong unit economics and consistent growth in revenue and student outcomes</p>
+            </div>
+            
             <div class="financials-grid">
-                <div class="financial-card">
+                <div class="financial-card wide">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
                     <h3>Revenue Growth</h3>
                     <div class="financial-chart">
-                        <!-- Chart would be implemented with Chart.js or similar -->
-                        <div class="chart-placeholder">Revenue Growth Chart</div>
+                        <canvas id="revenueChart"></canvas>
                     </div>
                 </div>
+                
                 <div class="financial-card">
+                    <div class="card-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
                     <h3>Key Metrics</h3>
                     <ul class="metrics-list">
                         <li>
@@ -228,6 +304,10 @@
                             <span class="metric-label">Student Success Rate</span>
                             <span class="metric-value">78%</span>
                         </li>
+                        <li>
+                            <span class="metric-label">Customer LTV</span>
+                            <span class="metric-value">$12,000</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -237,42 +317,90 @@
     <!-- Team -->
     <section id="team" class="section">
         <div class="container">
-            <h2 class="section-title">Our Team</h2>
+            <div class="section-header">
+                <span class="section-badge">Leadership</span>
+                <h2 class="section-title">Our Team</h2>
+                <p class="section-subtitle">Led by experienced professionals with deep expertise in cloud engineering and education</p>
+            </div>
+            
             <div class="team-grid">
                 <div class="team-card">
                     <div class="team-avatar">
-                        <img src="https://via.placeholder.com/150" alt="Adetayo Ibijemilusi">
+                        <img src="https://via.placeholder.com/300x300" alt="Adetayo Ibijemilusi">
                     </div>
                     <h3>Adetayo Ibijemilusi</h3>
                     <p class="team-role">Founder & CEO</p>
                     <p class="team-bio">Former cloud engineer turned educator, helping others achieve similar career transformations.</p>
+                    <div class="team-social">
+                        <a href="https://linkedin.com" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
                 </div>
-                <!-- Additional team members would be added here -->
             </div>
         </div>
     </section>
 
     <!-- Investment Opportunity -->
-    <section class="section">
+    <section id="investment" class="section">
         <div class="container">
-            <h2 class="section-title">Investment Opportunity</h2>
+            <div class="section-header">
+                <span class="section-badge">Investment</span>
+                <h2 class="section-title">Investment Opportunity</h2>
+                <p class="section-subtitle">Join us in revolutionizing cloud engineering education and creating life-changing opportunities</p>
+            </div>
+            
             <div class="investment-grid">
                 <div class="investment-card">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
                     <h3>Funding Needs</h3>
-                    <ul>
-                        <li>Platform Development</li>
-                        <li>Marketing & Growth</li>
-                        <li>Team Expansion</li>
-                        <li>Curriculum Development</li>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Platform Development</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Marketing & Growth</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Team Expansion</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Curriculum Development</span>
+                        </li>
                     </ul>
                 </div>
+                
                 <div class="investment-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
                     <h3>Use of Funds</h3>
-                    <ul>
-                        <li>Technology Infrastructure</li>
-                        <li>Marketing & Customer Acquisition</li>
-                        <li>Team Building</li>
-                        <li>Curriculum Enhancement</li>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Technology Infrastructure</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Marketing & Customer Acquisition</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Team Building</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Curriculum Enhancement</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -280,12 +408,24 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="section">
+    <section id="contact" class="section">
         <div class="container">
             <div class="contact-card">
+                <div class="card-icon large">
+                    <i class="fas fa-handshake"></i>
+                </div>
                 <h2>Interested in Investing?</h2>
                 <p>We're looking for partners who share our vision of transforming education and creating life-changing opportunities.</p>
-                <a href="mailto:michaeltayo96@outlook.com" class="btn btn-primary">Contact Us</a>
+                <div class="contact-actions">
+                    <a href="mailto:michaeltayo96@outlook.com" class="btn btn-primary btn-large">
+                        <i class="fas fa-envelope"></i>
+                        Contact Us
+                    </a>
+                    <a href="#" class="btn btn-secondary btn-large">
+                        <i class="fas fa-download"></i>
+                        Download Pitch Deck
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -324,9 +464,61 @@
             </div>
             
             <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
                 <p>&copy; CloudBootCamp.AI 2025. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Revenue Growth Chart
+        const ctx = document.getElementById('revenueChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                datasets: [{
+                    label: 'Monthly Revenue',
+                    data: [15000, 16500, 18000, 19500, 21000, 23000],
+                    borderColor: '#e14696',
+                    backgroundColor: 'rgba(225, 70, 150, 0.1)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: 'rgba(255, 255, 255, 0.7)'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: 'rgba(255, 255, 255, 0.7)'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html> 

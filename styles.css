@@ -1565,3 +1565,122 @@ button {
         gap: 1rem;
     }
 }
+
+/* Market Trends */
+.market-trend {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+
+.market-trend i {
+    font-size: 0.8rem;
+}
+
+/* Financial Card Modifications */
+.financial-card.wide {
+    grid-column: span 2;
+}
+
+.financial-chart {
+    height: 300px;
+    margin-top: 2rem;
+    position: relative;
+}
+
+/* Team Modifications */
+.team-social {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-light);
+    transition: all var(--transition-medium);
+}
+
+.social-link:hover {
+    background: var(--gradient-primary);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Contact Modifications */
+.card-icon.large {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 2rem;
+}
+
+.card-icon.large i {
+    font-size: 2rem;
+}
+
+.contact-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.contact-actions .btn i {
+    margin-right: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .financial-card.wide {
+        grid-column: auto;
+    }
+    
+    .contact-actions {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .market-grid,
+    .business-model-grid,
+    .investment-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* Animation Classes */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scale-in {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.6s ease;
+}
+
+.scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
